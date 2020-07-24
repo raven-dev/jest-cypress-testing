@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Link, Switch, useHistory, useLocation} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Link, Switch, useHistory} from 'react-router-dom'
 
 type FormFood = {food: string}
 
@@ -121,11 +121,11 @@ const Confirm = () => {
       </div>
       <div>
         <strong id='food-label'>Favorite Food: </strong>
-        <span aria-labelledby='food-label'>{form.food}</span>
+        <span data-testid='food-selection'>{form.food}</span>
       </div>
       <div>
         <strong id='drink-label'>Favorite Drink: </strong>
-        <span aria-labelledby='drink-label'>{form.drink}</span>
+        <span data-testid='drink-selection'>{form.drink}</span>
       </div>
       <Link to='page-2'>Go Back</Link>
       <button onClick={handleConfirmClick}>Confirm</button>

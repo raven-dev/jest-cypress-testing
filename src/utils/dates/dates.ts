@@ -30,7 +30,6 @@ const daysDifference = (startDate: Moment, endDate: Moment) => {
 
 const prettifyDate = (date: Moment) => {
   if (!date) return 'N/A'
-
   return date.format('L')
 }
 

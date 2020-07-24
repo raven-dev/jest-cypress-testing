@@ -1,7 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Link, Switch, useHistory, useLocation} from 'react-router-dom'
 
-
 type FormFood = {food: string}
 
 type FormDrink = {drink: string}
@@ -145,9 +144,7 @@ const Success = () => (
 
 const Problem = () => {
   return(
-    <>
       <div>Oh no. There was an error</div>
-    </>
   )
 }
 
